@@ -1,0 +1,14 @@
+<script>
+  window.active_coupon = {% if settings.active_coupon_param_url %}true{% else %}false{% endif %}; // khai báo trên head
+</script>
+
+// Settings với name là: active_coupon_param_url
+<fieldset>
+    <legend>Tính năng Coupon từ liên kết</legend>
+    <table>
+      <tr>
+        <td><label>Hiển thị?</label></td>
+        <td><input type="checkbox"  name="active_coupon_param_url" /></td>
+      </tr>
+    </table>
+  </fieldset>
